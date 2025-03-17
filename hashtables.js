@@ -1,5 +1,43 @@
 //
 
+class HashTable {
+  constructor(size = 7) {
+    this.data = new Array(size);
+  }
+
+  _hash(key) {
+    let hash = 0;
+    for (let i = 0; i < key.length; i++) {
+      hash = (hash + key.charCodeAt(i) * i) % this.data.length;
+    }
+    return hash;
+  }
+
+  set(key, value) {
+    let index = this._hash(key);
+    if (!this.data[index]) {
+      this.data[index] = [];
+    }
+    this.data[index].push([key, value]);
+  }
+
+  get(key) {
+    let index = this._hash(key);
+    if (this.data[index]) {
+      for (let pair of this.data[index]) {
+        if (pair[0] === key) return pair[1];
+      }
+    }
+    return undefined;
+  }
+}
+
+const users = new HashTable();
+users.set("Abdul", "abdul@gmail.com");
+users.set("Fatima", "fatima@gmail.com");
+
+console.log(users.get("Abdul")); // "abdul@gmail.com"
+console.log(users.get("Fatima")); // "fatima@gmail.com"
 
 
 function firstRecurringCharacter(arr) {
