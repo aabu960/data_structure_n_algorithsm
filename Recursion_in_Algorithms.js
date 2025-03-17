@@ -32,3 +32,22 @@ function factorialIteration(n) {
 
 }
 console.log(factorialIteration(10));
+
+// Fibonacci Sequence 
+//Find nth Fibonacci Number (0, 1, 1, 2, 3, 5, 8...)
+
+function fibonacci(n) {
+    if (n <= 1) return n; // Base Case
+    return fibonacci(n - 1) + fibonacci(n - 2); // Recursive Case
+  }
+  
+  console.log(fibonacci(5)); // Output: 5
+ 
+  // Sum of an Array using Recursion
+  function sumArray(arr, index = 0) {
+    if (index === arr.length) return 0; // Base Case
+    return arr[index] + sumArray(arr, index + 1); // Recursive Case
+  }
+  
+  console.log(sumArray([1, 2, 3, 4, 5])); // 15
+  
