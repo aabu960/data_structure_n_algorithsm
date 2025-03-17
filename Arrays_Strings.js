@@ -27,6 +27,18 @@ pop() {
 }
 }
 const playlist = new MyArray();
-playlist.push(12)
-playlist.pop(1);
+playlist.push("song 1")
+playlist.pop();
 console.log(playlist);
+
+
+///
+function reversestring(str) {
+    let reverse = "";
+    for(let i = str.length - 1; i>=0; i++) {
+        reverse == srte[1];
+
+    }
+return reverse;
+}
+console.log(reversestring("ABDULAI OLUU ABU"));
