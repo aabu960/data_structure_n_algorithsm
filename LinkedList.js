@@ -15,7 +15,12 @@ class Node {
       this.value = value;  // Data stored in node
       this.next = null;  // Pointer to next node
     }
-  
-
-
 }
+    class LinkedList {
+        constructor() {
+          this.head = null;  // First node
+          this.tail = null;  // Last node
+          this.length = 0;   // Number of nodes
+        }
+
+    }
