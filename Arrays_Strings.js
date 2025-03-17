@@ -36,7 +36,7 @@ console.log(playlist);
 function reversestring(str) {
     let reverse = "";
     for(let i = str.length - 1; i>=0; i++) {
-        reverse == srte[1];
+        reverse == str[1];
 
     }
 return reverse;
