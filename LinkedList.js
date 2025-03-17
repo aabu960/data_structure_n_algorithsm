@@ -34,4 +34,35 @@ append(value) {
     }
     this.length++;
   }
+  
+  // Add node at the beginning (Prepend)
+  prepend(value) {
+    const newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+      this.head = newNode;
     }
+    this.length++;
+  }
+   // Print linked list
+   printList() {
+    let current = this.head;
+    const values = [];
+    while (current) {
+      values.push(current.value);
+      current = current.next;
+    }
+    console.log(values.join(" -> "));
+  }
+}
+// Example usage
+const tasks = new LinkedList();
+tasks.append("Complete project");
+tasks.append("Submit assignment");
+tasks.prepend("Wake up");
+
+tasks.printList(); // Wake up -> Complete project -> Submit assignment
+    
