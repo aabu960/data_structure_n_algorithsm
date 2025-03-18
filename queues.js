@@ -42,4 +42,4 @@ class Queue {
   console.log(printerQueue.peek()); // "Document1.pdf"
   printerQueue.dequeue();
   console.log(printerQueue.peek()); // "Document2.pdf"
-  
+   

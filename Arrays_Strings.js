@@ -31,14 +31,3 @@ playlist.push("song 1")
 playlist.pop();
 console.log(playlist);
 
-
-///
-function reversestring(str) {
-    let reverse = "";
-    for(let i = str.length - 1; i>=0; i++) {
-        reverse == str[1];
-
-    }
-return reverse;
-}
-console.log(reversestring("ABDULAI OLUU ABU"));
