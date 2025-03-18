@@ -8,7 +8,6 @@
 ✅ Quick Sort – Pick pivot, partition, sort (recursion)
 ✅ Heap Sort – Convert to heap, sort using heapify
 */
-console.log("this a test");
 
 function bubbleSort(arr) {
     let n = arr.length;
@@ -23,4 +22,4 @@ function bubbleSort(arr) {
   }
   
   console.log(bubbleSort([5, 3, 8, 4, 2])); // [2, 3, 4, 5, 8]
-  
+  console.log("good")
