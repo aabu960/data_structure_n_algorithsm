@@ -23,3 +23,18 @@ function bubbleSort(arr) {
   
   console.log(bubbleSort([5, 3, 8, 4, 2])); // [2, 3, 4, 5, 8]
   console.log("sorted")
+
+  function bubbledsort(ary) {
+    let n = ary.length;
+
+    for(i=0;i<=n-1;i++){
+      for(j=0; j<=n-j-1;i++){
+
+        if(ary[j]>ary[j-1]){
+          [ary[j-1],ary[j]]  = [ary[j]>ary[j-1]]
+      
+    }
+  }
+}
+    return ary;
+  } 
