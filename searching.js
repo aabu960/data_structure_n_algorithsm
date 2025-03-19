@@ -32,3 +32,18 @@ else right = mid -1;
 }
 
 console.log("good")
+
+
+
+function dfs(graph, node, visited = new Set()) {
+    if (!visited.has(node)) {
+      console.log(node);
+      visited.add(node);
+      for (let neighbor of graph[node]) {
+        dfs(graph, neighbor, visited);
+      }
+    }
+  }
+  
+  dfs(graph, "A"); // Output: A B D E F C
+  
