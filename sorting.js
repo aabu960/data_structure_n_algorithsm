@@ -39,4 +39,4 @@ function bubbleSort(arr) {
     return ary;
   } 
 
-  console.log(bubbledsort([5, 3, 8, 4, 2])); // [2, 3, 4, 5, 8]
+  console.log(bubbledsort([5, 9, 8, 4, 2])); // [2, 3, 4, 5, 8]
