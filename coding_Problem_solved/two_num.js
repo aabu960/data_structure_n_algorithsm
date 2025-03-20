@@ -10,3 +10,5 @@ function twoSum(nums, target) {
 }
 
 console.log("Good ")
+console.log("Good ")
+console.log("Good ")
