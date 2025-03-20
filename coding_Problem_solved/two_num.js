@@ -8,3 +8,5 @@ function twoSum(nums, target) {
     }
     return [];
 }
+
+console.log("Good ")
